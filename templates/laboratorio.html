@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PLANILLAS RECIBIDAS</h1>
+    <table>
+        <tr>
+            <th>RCQLN</th>
+            <th>Vigencia</th>
+            <th>Revisión</th>
+            <th>Fecha</th>
+            <th>Laboratorio</th>
+            <th>Vino/Mosto</th>
+            <th>Código</th>
+            <th>Densidad</th>
+            <th>Extracto Densidad</th>
+            <th>Brix (Bx)</th>
+            <th>Alcohol Alcolyzer</th>
+            <th>Alcohol Destilación</th>
+            <th>Azúcar Qco</th>
+            <th>Fósforo (Foss)</th>
+            <th>SO2 Lt</th>
+            <th>SO2 Real</th>
+            <th>SO2 Rankine</th>
+            <th>Acidez Titulable</th>
+            <th>Acidez Volátil Destilación</th>
+            <th>Color Espectro</th>
+            <th>Oxígeno</th>
+            <th>CO2</th>
+            <th>RCIH</th>
+            <th>Proteínas Calor</th>
+            <th>Hierro</th>
+            <th>Cobre</th>
+            <th>Potasio</th>
+            <th>Sorbato</th>
+            <th>Pureza Varietal</th>
+            <th>Materia Colorante Artificial</th>
+            <th>Calcio</th>
+            <th>Cloruros</th>
+            <th>Sulfatos</th>
+            <th>Ferro</th>
+            <th>Chequeo de Estabilidad</th>
+            <th>Filtrabilidad</th>
+            <th>Prueba Frío</th>
+            <th>NPA</th>
+            <th>Polifenoles Totales</th>
+            <th>Rendimiento Viabilidad</th>
+            <th>NTU</th>
+            <th>ACCIONES</th>
+        </tr>
+        {% for row in datos %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+            <td>{{ row[6] }}</td>
+            <td>{{ row[7] }}</td>
+            <td>{{ row[8] }}</td>
+            <td>{{ row[9] }}</td>
+            <td>{{ row[10] }}</td>
+            <td>{{ row[11] }}</td>
+            <td>{{ row[12] }}</td>
+            <td>{{ row[13] }}</td>
+            <td>{{ row[14] }}</td>
+            <td>{{ row[15] }}</td>
+            <td>{{ row[16] }}</td>
+            <td>{{ row[17] }}</td>
+            <td>{{ row[18] }}</td>
+            <td>{{ row[19] }}</td>
+            <td>{{ row[20] }}</td>
+            <td>{{ row[21] }}</td>
+            <td>{{ row[22] }}</td>
+            <td>{{ row[23] }}</td>
+            <td>{{ row[24] }}</td>
+            <td>{{ row[25] }}</td>
+            <td>{{ row[26] }}</td>
+            <td>{{ row[27] }}</td>
+            <td>{{ row[28] }}</td>
+            <td>{{ row[29] }}</td>
+            <td>{{ row[30] }}</td>
+            <td>{{ row[31] }}</td>
+            <td>{{ row[32] }}</td>
+            <td>{{ row[33] }}</td>
+            <td>{{ row[34] }}</td>
+            <td>{{ row[35] }}</td>
+            <td>{{ row[36] }}</td>
+            <td>{{ row[37] }}</td>
+            <td>{{ row[38] }}</td>
+            <td>{{ row[39] }}</td>
+            <td>{{ row[40] }}</td>
+        </tr>
+        {% endfor %}
+    </table>    
+</body>
+</html>

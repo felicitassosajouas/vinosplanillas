@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registrarse por favor</h1>
+    <section>
+        <h2>Iniciar Sesion</h2>
+        <!-- Mensajes Flash -->
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+        <form method="POST" action="{{url_for('register')}}">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="nombre">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Password" required>
+            </div>
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+</body>
+</html>

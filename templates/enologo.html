@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+        <form action="{{ url_for('enviar_muestra') }}" method="POST">
+            <input type="text" name="vigencia" placeholder="Vigencia" required>
+            <input type="text" name="revision" placeholder="Revisión" required>
+            <input type="text" name="fecha" placeholder="Fecha" required>
+            <input type="text" name="laboratorio" placeholder="Laboratorio" required>
+            <input type="text" name="vinoMosto" placeholder="Vino o Mosto" required>
+            <input type="text" name="codigo" placeholder="Código" required>
+            <input type="text" name="densidad" placeholder="Densidad" required>
+            <input type="text" name="extDens" placeholder="Extracto Densidad" required>
+            <input type="text" name="bx" placeholder="Bx" required>
+            <input type="text" name="alcAlcolyzer" placeholder="Alcohol Alcolyzer" required>
+            <input type="text" name="alcDest" placeholder="Alcohol Destilación" required>
+            <input type="text" name="azQco" placeholder="Azúcar" required>
+            <input type="text" name="foss" placeholder="foss" required>
+            <input type="text" name="so2lt" placeholder="so2lt" required>
+            <input type="text" name="so2Real" placeholder="so2Real" required>
+            <input type="text" name="so2Rankine" placeholder="so2Rankine" required>
+            <input type="text" name="atTitulable" placeholder="atTitulable" required>
+            <input type="text" name="avDestilacion" placeholder="avDestilacion" required>
+            <input type="text" name="colorEspectro" placeholder="colorEspectro" required>
+            <input type="text" name="oxigeno" placeholder="oxigeno" required>
+            <input type="text" name="co2" placeholder="co2" required>
+            <input type="text" name="rcih" placeholder="rcih" required>
+            <input type="text" name="rProtCalor" placeholder="rProtCalor" required>
+            <input type="text" name="hierro" placeholder="hierro" required>
+            <input type="text" name="cobre" placeholder="cobre" required>
+            <input type="text" name="potasio" placeholder="potasio" required>
+            <input type="text" name="sorbato" placeholder="sorbato" required>
+            <input type="text" name="purezaVarietal" placeholder="purezaVarietal" required>
+            <input type="text" name="matColArt" placeholder="matColArt" required>
+            <input type="text" name="calcio" placeholder="calcio" required>
+            <input type="text" name="cloruros" placeholder="cloruros" required>
+            <input type="text" name="sulfatos" placeholder="sulfatos" required>
+            <input type="text" name="ferro" placeholder="ferro" required>
+            <input type="text" name="checkStab" placeholder="checkStab" required>
+            <input type="text" name="filtrabilidad" placeholder="filtrabilidad" required>
+            <input type="text" name="pruebaFrio" placeholder="pruebaFrio" required>
+            <input type="text" name="npa" placeholder="npa" required>
+            <input type="text" name="polifTotales" placeholder="polifTotales" required>
+            <input type="text" name="rtoViabilidad" placeholder="rtoViabilidad" required>
+            <input type="text" name="ntu" placeholder="ntu" required>
+            <button type="submit">Enviar Muestra</button>
+        </form>
+        
+    </div>
+
+</body>
+</html>
