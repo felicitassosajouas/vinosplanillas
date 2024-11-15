@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitud de Muestra</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <h1>Formulario de Solicitud de Muestra</h1>
+
+
+    <form action="/submit_form" method="POST">
+
+        <label for="tipovino">Tipo de vino:</label>
+        <input type="text" id="tipovino" name="tipovino" required><br><br>
+
+        <label for="sectorproveniente">Sector Proveniente:</label>
+        <input type="text" id="sectorproveniente" name="sectorproveniente" required><br><br>
+
+        <label for="id">ID</label>
+        <input type="number" id="id" name="id"><br><br>
+
+        <label for="rcqln">Rnqln:</label>
+        <input type="number" id="rcqln" name="rcqln"><br><br>
+
+        <label for="vigencia">Vigencia:</label>
+        <input type="text" id="vigencia" name="vigencia"><br><br>
+
+        <label for="revision">Revisión:</label>
+        <input type="text" id="revision" name="revision"><br><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="laboratorio">Laboratorio:</label>
+        <input type="text" id="laboratorio" name="laboratorio"><br><br>
+
+        <label for="vinoMosto">Vino Mosto:</label>
+        <input type="text" id="vinoMosto" name="vinoMosto"><br><br>
+
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo"><br><br>
+
+        <label for="densidad">Densidad:</label>
+        <input type="text" id="densidad" name="densidad"><br><br>
+
+        <label for="extDens">Ext. Densidad:</label>
+        <input type="text" id="extDens" name="extDens"><br><br>
+
+        <label for="bx">BX:</label>
+        <input type="text" id="bx" name="bx"><br><br>
+
+        <label for="alcAlcolyzer">Alc. Alcolyzer:</label>
+        <input type="text" id="alcAlcolyzer" name="alcAlcolyzer"><br><br>
+
+        <label for="alcDest">Alc. Destilación:</label>
+        <input type="text" id="alcDest" name="alcDest"><br><br>
+
+        <label for="azQco">Azúcar Qco:</label>
+        <input type="text" id="azQco" name="azQco"><br><br>
+
+        <label for="foss">Foss:</label>
+        <input type="text" id="foss" name="foss"><br><br>
+
+        <label for="so2lt">SO2 Lts:</label>
+        <input type="text" id="so2lt" name="so2lt"><br><br>
+
+        <label for="so2Real">SO2 Real:</label>
+        <input type="text" id="so2Real" name="so2Real"><br><br>
+
+        <label for="so2Rankine">SO2 Rankine:</label>
+        <input type="text" id="so2Rankine" name="so2Rankine"><br><br>
+
+        <label for="atTitulable">At. Titulable:</label>
+        <input type="text" id="atTitulable" name="atTitulable"><br><br>
+
+        <label for="avDestilacion">Av. Destilación:</label>
+        <input type="text" id="avDestilacion" name="avDestilacion"><br><br>
+
+        <label for="colorEspectro">Color Espectro:</label>
+        <input type="text" id="colorEspectro" name="colorEspectro"><br><br>
+
+        <label for="oxigeno">Oxígeno:</label>
+        <input type="text" id="oxigeno" name="oxigeno"><br><br>
+
+        <label for="co2">CO2:</label>
+        <input type="text" id="co2" name="co2"><br><br>
+
+        <label for="rcih">RCIH:</label>
+        <input type="text" id="rcih" name="rcih"><br><br>
+
+        <label for="rProtCalor">R. Prot. Calor:</label>
+        <input type="text" id="rProtCalor" name="rProtCalor"><br><br>
+
+        <label for="hierro">Hierro:</label>
+        <input type="text" id="hierro" name="hierro"><br><br>
+
+        <label for="cobre">Cobre:</label>
+        <input type="text" id="cobre" name="cobre"><br><br>
+
+        <label for="potasio">Potasio:</label>
+        <input type="text" id="potasio" name="potasio"><br><br>
+
+        <label for="sorbato">Sorbato:</label>
+        <input type="text" id="sorbato" name="sorbato"><br><br>
+
+        <label for="purezaVarietal">Pureza Varietal:</label>
+        <input type="text" id="purezaVarietal" name="purezaVarietal"><br><br>
+
+        <label for="matColArt">Mat. Col. Art.:</label>
+        <input type="text" id="matColArt" name="matColArt"><br><br>
+
+        <label for="calcio">Calcio:</label>
+        <input type="text" id="calcio" name="calcio"><br><br>
+
+        <label for="cloruros">Cloruros:</label>
+        <input type="text" id="cloruros" name="cloruros"><br><br>
+
+        <label for="sulfatos">Sulfatos:</label>
+        <input type="text" id="sulfatos" name="sulfatos"><br><br>
+
+        <label for="ferro">Ferro:</label>
+        <input type="text" id="ferro" name="ferro"><br><br>
+
+        <label for="checkStab">Check Stab:</label>
+        <input type="text" id="checkStab" name="checkStab"><br><br>
+
+        <label for="filtrabilidad">Filtrabilidad:</label>
+        <input type="text" id="filtrabilidad" name="filtrabilidad"><br><br>
+
+        <label for="pruebaFrio">Prueba Frío:</label>
+        <input type="text" id="pruebaFrio" name="pruebaFrio"><br><br>
+
+        <label for="npa">NPA:</label>
+        <input type="text" id="npa" name="npa"><br><br>
+
+        <label for="polifTotales">Polif. Totales:</label>
+        <input type="text" id="polifTotales" name="polifTotales"><br><br>
+
+        <label for="rtoViabilidad">RTO Viabilidad:</label>
+        <input type="text" id="rtoViabilidad" name="rtoViabilidad"><br><br>
+
+        <label for="ntu">NTU:</label>
+        <input type="text" id="ntu" name="ntu"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <div>
+        <a href="/laboratorio">Volver</a>
+    </div>
+</body>
+</html>
+
+

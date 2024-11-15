@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Planillas</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <h1>Bienvenido, {{ current_user.nombre }}!</h1>
+    <h2>¿Qué deseas realizar hoy?</h2>
+    <ol>
+        <li><a href="/vinosproceso">VER VINOS EN PROCESO</a></li>
+        <li><a href="/planilla">VER/CREAR PLANILLAS</a></li>    
+    </ol>
+
+    <h3>Planillas Cargadas:</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Vigencia</th>
+                <th>Revisión</th>
+                <th>Fecha</th>
+                <th>Laboratorio</th>
+                <th>Vino Mosto</th>
+                <th>Código</th>
+                <th>Densidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for planilla in planillas %}
+            <tr>
+                <td>{{ planilla.rcqln }}</td>
+                <td>{{ planilla.vigencia }}</td>
+                <td>{{ planilla.revision }}</td>
+                <td>{{ planilla.fecha }}</td>
+                <td>{{ planilla.laboratorio }}</td>
+                <td>{{ planilla.vinoMosto }}</td>
+                <td>{{ planilla.codigo }}</td>
+                <td>{{ planilla.densidad }}</td>
+                <td><a href="/editar/{{ planilla.rcqln }}">Editar</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+</body>
+</html>

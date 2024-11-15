@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0%;
+    color: #ac9177;
+    background-image: url('../images/blurr.jpeg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3%;
+}
+h1{
+    font-size: 50px;
+    background-color:rgba(220, 207, 190, 0.404);
+    align-items: center;
+    text-align: center;
+}
+ul{
+    align-items: center;
+    list-style-type: none;
+    width:100%;
+}
+li a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+li a:hover{
+    background-color: rgba(255, 248, 240, 0.271);
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    color: #ac9177;
+    border-left: #ac9177;
+    border-left: solid;
+}
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECTOR ENOLOGÍA</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <h1>Bienvenido, {{ current_user.nombre }}!</h1>
+    <h2>¿Qué deseas realizar hoy?</h2>
+    <ol>
+        <li><a href="/vinosproceso">VER VINOS EN PROCESO</a></li>
+        <li><a href=/ver_formulario>VER PLANILLAS</a></li>    
+    </ol>
+
+    <a href="{{ url_for('logout') }}">Cerrar Sesión</a>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Datos</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <section>
+        <div>
+            <h2>Cargar Datos</h2>
+            <form method="POST" action="/addordenes">
+                <div>
+                    <input type="text" name="sector" placeholder="Sector de Trabajo" required>
+                </div>
+                <div>
+                    <input type="text" name="operario" placeholder="Nombre Operario" required>
+                </div>
+                <div>
+                    <input type="text" name="fecha" placeholder="Fecha" required>
+                </div>
+                <div>
+                    <input type="text" name="detalles_tarea" placeholder="Detallar Tarea" required>
+                </div>
+                <div>
+                    <input type="text" name="encargado_a_cargo" placeholder="Encargado a Cargo" required>
+                </div>
+                <div>
+                    <button type="submit">Agregar Datos</button>
+                    <a href="/cargar_datosordenes">Volver</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+

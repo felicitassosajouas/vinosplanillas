@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos del Formulario - Enólogo</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <h1>Datos de los formularios enviados por el sector laboratorio</h1>
+
+    {% if datos_formulario %}
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Tipo de Vino</th>
+                <th>ID</th>
+                <th>RCQLN</th>
+                <th>Vigencia</th>
+                <th>Revisión</th>
+                <th>Fecha</th>
+                <th>Laboratorio</th>
+                <th>Vino/Mosto</th>
+                <th>Código</th>
+                <th>Densidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dato in datos_formulario %}
+            <tr>
+                <td>{{ dato[0] }}</td>
+                <td>{{ dato[1] }}</td>
+                <td>{{ dato[2] }}</td>
+                <td>{{ dato[3] }}</td>
+                <td>{{ dato[4] }}</td>
+                <td>{{ dato[5] }}</td>
+                <td>{{ dato[6] }}</td>
+                <td>{{ dato[7] }}</td>
+                <td>{{ dato[8] }}</td>
+                <td>{{ dato[9] }}</td>
+                <td>{{ dato[10] }}</td>
+                <td>
+                    <!-- Puedes agregar acciones aquí, como editar o eliminar -->
+                    <a href="{{ url_for('ver_detalle', id=dato[2]) }}">Ver Detalles</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div>
+        <a href="/enologo">Volver</a>
+    </div>
+    {% else %}
+        <p>No hay datos disponibles.</p>
+    {% endif %}
+</body>
+</html>
