@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órden de Trabajo - Bodega</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <section>
+        <h1>Órdenes de Trabajo</h1>
+        <div>
+            <a href="\saveordenes">AGREGAR REGISTROS</a>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sector</th>
+                        <th>Operario</th>
+                        <th>Fecha (año/mes/día)</th>
+                        <th>Detalles de Tarea</th>
+                        <th>Encargado a Cargo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for cliente in clientes %}
+                    <tr>
+                        <td>{{ cliente.1 }}</td>
+                        <td>{{ cliente.2 }}</td>
+                        <td>{{ cliente.3 }}</td>
+                        <td>{{ cliente.4 }}</td>
+                        <td>{{ cliente.5 }}</td>
+                        <td>
+                            <a href="/editordenes/{{ cliente.0 }}">Editar</a>
+                            <form action="/deleteordenes/{{ cliente.0 }}" method="POST">
+                                <button type="submit">Eliminar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <a href="/encargado">Volver</a>
+        </div>
+    </section>
+</body>
+</html>

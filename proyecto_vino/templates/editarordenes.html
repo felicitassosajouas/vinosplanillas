@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDITAR ÓRDENES DE TRABAJO</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <section>
+        <h2>Editar Datos</h2>
+        <form method="POST" action="/updateordenes/{{contact.0}}">
+            <div>
+                <input type="text" name="sector" placeholder="Sector de Trabajo" value="{{contact.1}}" required>
+            </div>
+            <div>
+                <input type="text" name="operario" placeholder="Nombre Operario" value="{{contact.2}}" required>
+            </div>
+            <div>
+                <input type="text" name="fecha" placeholder="Fecha (año/mes/dia)" value="{{contact.3}}" required>
+            </div>
+            <div>
+                <input type="text" name="detalles_tarea" placeholder="Detallar Tarea" value="{{contact.4}}" required>
+            </div>
+            <div>
+                <input type="text" name="encargado_a_cargo" placeholder="Encargado a Cargo" value="{{contact.5}}" required>
+            </div>
+            <div>
+                <button type="submit">Agregar Datos</button>
+                <a href="/cargar_datosordenes">Volver</a>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

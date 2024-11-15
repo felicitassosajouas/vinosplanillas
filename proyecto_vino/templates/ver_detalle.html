@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Formulario</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <h1>Detalles del Formulario</h1>
+
+    <p><strong>Tipo de Vino:</strong> {{ detalle[0] }}</p>
+    <p><strong>Sector Proveniente:</strong> {{ detalle[1] }}</p>
+    <p><strong>ID:</strong> {{ detalle[2] }}</p>
+    <p><strong>RCQLN:</strong> {{ detalle[3] }}</p>
+    <p><strong>Vigencia:</strong> {{ detalle[4] }}</p>
+    <p><strong>Revisión:</strong> {{ detalle[5] }}</p>
+    <p><strong>Fecha:</strong> {{ detalle[6] }}</p>
+    <p><strong>Laboratorio:</strong> {{ detalle[7] }}</p>
+    <p><strong>Vino/Mosto:</strong> {{ detalle[8] }}</p>
+    <p><strong>Código:</strong> {{ detalle[9] }}</p>
+    <p><strong>Densidad:</strong> {{ detalle[10] }}</p>
+
+    <!-- Aquí puedes añadir más campos según los datos almacenados en tu base de datos -->
+
+    <a href="{{ url_for('ver_formulario') }}">Volver a la lista</a>
+</body>
+</html>

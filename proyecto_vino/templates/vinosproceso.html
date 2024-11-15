@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECTOR ENOLOGÍA</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <section>
+        <h1>Vinos En Proceso</h1>
+        <div>
+            <a href="\save">Agregar Registros</a>
+
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Vino</th>
+                        <th>Variedad de UVA</th>
+                        <th>N° Vasija</th>
+                        <th>Metodos de Vinificacion</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for cliente in clientes %}
+                    <tr>
+                        <td>{{ cliente.1 }}</td>
+                        <td>{{ cliente.2 }}</td>
+                        <td>{{ cliente.3 }}</td>
+                        <td>{{ cliente.4 }}</td>
+                        <td >
+                            <a href="/edit/{{ cliente.0 }}">Editar</a>
+                            <form action="/delete/{{ cliente.0 }}" method="POST">
+                                <button type="submit">Eliminar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <a href="/enologo">Volver</a>
+        </div>
+    </section>
+</body>
+</html>

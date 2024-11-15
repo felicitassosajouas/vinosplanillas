@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Datos</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <section>
+        <div>
+            <h2>Cargar Datos</h2>
+            <form method="POST" action="/add">
+                <div>
+                    <input type="text" name="tipodevino" placeholder="Tipo de Vino" required>
+                </div>
+                <div>
+                    <input type="text" name="variedaddeuva" placeholder="Variedad de UVA" required>
+                </div>
+                <div>
+                    <input type="text" name="numerovasija" placeholder="N° Vasija" required>
+                </div>
+                <div>
+                    <input type="text" name="metodosvinificacion" placeholder="Metodos de Viunificacion" required>
+                </div>
+                <div>
+                    <button type="submit">Agregar Datos</button>
+                    <a href="/cargar_datos">Volver</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+

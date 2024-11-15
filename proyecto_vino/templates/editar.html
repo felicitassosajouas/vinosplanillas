@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDITAR PLANILLA</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <section>
+        <h2>Editar Datos</h2>
+        <form method="POST" action="/update/{{contact.0}}">
+            <div>
+                <input type="text" name="tipodevino" placeholder="Tipo de Vino" value="{{contact.1}}" required>
+            </div>
+            <div>
+                <input type="text" name="variedaddeuva" placeholder="Variedad de UVA" value="{{contact.2}}" required>>
+            </div>
+            <div>
+                <input type="text" name="numerovasija" placeholder="N° Vasija" value="{{contact.3}}" required>
+            </div>
+            <div>
+                <input type="text" name="metodosvinificacion" placeholder="Metodos de Viunificacion" value="{{contact.4}}" required>
+            </div>
+            <div>
+                <button type="submit">Agregar Datos</button>
+                <a href="/cargar_datos">Volver</a>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
